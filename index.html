@@ -127,7 +127,12 @@
   </div>
   </div>
 
-  <script src="script.js"></script>
+  <script >  if (window.innerWidth > 768) { // Adjust the width as needed
+    const script = document.createElement('script');
+    script.src = 'script.js';
+    document.head.appendChild(script);
+  }
+  </script>
 </body>
 </html>
 
