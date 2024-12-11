@@ -307,7 +307,7 @@ body {
 #toggleAutoscrollButton {
   position: fixed;
   top: 90%; 
-  right: 50%;
+  right: 55%;
   transform: translate(50%, -50%); 
   padding: 10px 20px;
   background-color: #000000; 
@@ -326,9 +326,76 @@ body {
   background-color: #ffffff; 
   color: black;
 }
+
+
+
 .mobile {
   display: none;
 }
+
+.creditos {
+  font-size: 20px;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+}
+
+.creditos p {
+  position: absolute;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  font-size: 20px;
+  color: white;
+  z-index: 1000;
+
+}
+
+#ButtonCreditos{
+position: fixed;
+top: 90%; 
+right: 42%;
+transform: translate(50%, -50%); 
+padding: 10px 20px;
+background-color: #000000; 
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 20px;
+cursor: pointer;
+z-index: 1000; 
+transition: background-color 0.3s, transform 0.2s;
+font-family: "Leap", sans-serif;
+display: none;
+}
+
+#ButtonCreditos:hover {
+  background-color: #ffffff; 
+  color: black;
+}
+
+#backButton{
+  position: fixed;
+  top: 90%; 
+  right: 50%;
+  transform: translate(50%, -50%); 
+  padding: 10px 20px;
+  background-color: #ffffff; 
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 1000; 
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: "Leap", sans-serif;
+  }
+  
+  #backButton:hover {
+    background-color: #000000; 
+    color: rgb(255, 255, 255);
+  }
 
 @media (max-width: 992px) or (orientation: portrait)  or (max-height: 599px) {
   .desktop {

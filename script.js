@@ -99,6 +99,7 @@ document.getElementById('revealButton').addEventListener('click', function () {
       revealButtonClicked = true;
       backgroundSound.play();
       document.getElementById('toggleAutoscrollButton').style.display = 'block';
+      document.getElementById('ButtonCreditos').style.display = 'block';
     } else {
       container.style.backgroundColor = '#000000';
       body.style.overflowX = 'hidden';
