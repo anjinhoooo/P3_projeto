@@ -107,6 +107,10 @@ document.getElementById('revealButton').addEventListener('click', function () {
 });
 
 
+const maxScroll = window.innerWidth * 8;
+window.addEventListener('scroll', () => {
+  if (window.scrollX > maxScroll) window.scrollTo(maxScroll, 0);
+});
 
 
 window.history.scrollRestoration = 'manual';

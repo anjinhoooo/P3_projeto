@@ -198,7 +198,7 @@ body {
 .desk { background-image: url('assets/images/Desk.png'); z-index: 2; left: 200vw; }
 .man { background-image: url('assets/images/man.png'); z-index: 3; left: 215vw; }
 .lamp { background-image: url('assets/images/lamp.png'); z-index: 4; left: 230vw; }
-.floor-stuff { background-image: url('floorstuff.png'); z-index: 5; left: 250vw; }
+.floor-stuff { background-image: url('assets/images/floorstuff.png'); z-index: 5; left: 250vw; }
 
 .blueprint3 { background-image: url('assets/images/folha3.png'); z-index: 6; left: 380vw; }
 .blueprint2 { background-image: url('assets/images/folha2.png'); z-index: 5; left: 380vw; }
@@ -218,7 +218,7 @@ body {
 }
 
 .maquina2 {
-  background-image: url('assets/images/typewriter.png');
+  background-image: url('assets/images/maquina2.png');
   z-index: 5;
   background-position: center bottom;
   background-size: contain;
@@ -326,10 +326,57 @@ body {
   background-color: #ffffff; 
   color: black;
 }
+.mobile {
+  display: none;
+}
 
-
-@media (max-width: 768px){
+@media (max-width: 992px) or (orientation: portrait)  or (max-height: 599px) {
   .desktop {
     display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .background-mobile {
+    width: auto;
+    height: 100vh;
+    position: absolute;
+    transform: translate(-15%);
+    top: 0;
+
+  }
+  .title-mobile {
+    width: 95vw;
+    height: auto;
+    position: absolute;
+    z-index: 4;
+transform: translate(-50%, 0%);
+left: 50%;
+top: 10%;
+  }
+  .mobile-text {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Leap', sans-serif;
+    color: #000000;
+    width: 90vw;
+    
+  }
+  .mobile-text2 {
+    font-size: 1.5em;
+    position: absolute;
+    top: 50.2%;
+    left: 49.8%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Leap', sans-serif;
+    color: #ffffff;
+    width: 90vw;
   }
 }
