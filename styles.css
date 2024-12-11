@@ -307,7 +307,7 @@ body {
 #toggleAutoscrollButton {
   position: fixed;
   top: 90%; 
-  right: 55%;
+  right: 50%;
   transform: translate(50%, -50%); 
   padding: 10px 20px;
   background-color: #000000; 
@@ -354,8 +354,8 @@ body {
 
 #ButtonCreditos{
 position: fixed;
-top: 90%; 
-right: 42%;
+top: 95%; 
+right: 50%;
 transform: translate(50%, -50%); 
 padding: 10px 20px;
 background-color: #000000; 
